@@ -2,23 +2,23 @@
 <html>
 <head><meta name="generator" content="Hexo 3.8.0">
     <meta charset="utf-8">
-<title>联系方式 - 小杂鱼</title>
+<title>navigationBar颜色问题 - 小杂鱼</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 
 
-    <meta name="description" content="QQ: 464918717">
-<meta name="keywords" content="about">
+    <meta name="description" content="1.在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。1self.navigationController.navigationBar.backgroundColor = [UIColor green">
+<meta name="keywords" content="iOS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="联系方式">
-<meta property="og:url" content="http://xiaozayu.top/2018/11/23/contactMe/index.html">
+<meta property="og:title" content="navigationBar颜色问题">
+<meta property="og:url" content="http://xiaozayu.top/2018/12/27/iOS-navigationBar-color/index.html">
 <meta property="og:site_name" content="小杂鱼">
-<meta property="og:description" content="QQ: 464918717">
+<meta property="og:description" content="1.在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。1self.navigationController.navigationBar.backgroundColor = [UIColor green">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-12-23T09:22:32.206Z">
+<meta property="og:updated_time" content="2018-12-27T09:14:15.655Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="联系方式">
-<meta name="twitter:description" content="QQ: 464918717">
+<meta name="twitter:title" content="navigationBar颜色问题">
+<meta name="twitter:description" content="1.在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。1self.navigationController.navigationBar.backgroundColor = [UIColor green">
 
 
 
@@ -84,7 +84,7 @@
         <div class="navbar-brand is-flex-center">
             <a class="navbar-item navbar-logo" href="/">
             
-                <img src="/images/logo.svg" alt="联系方式" height="28">
+                <img src="/images/logo.svg" alt="navigationBar颜色问题" height="28">
             
             </a>
         </div>
@@ -127,13 +127,13 @@
         
         <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
             <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-11-23T09:21:19.000Z">2018-11-23</time>
+                <time class="level-item has-text-grey" datetime="2018-12-27T08:30:04.000Z">2018-12-27</time>
                 
                 
                 <span class="level-item has-text-grey">
                     
                     
-                    a few seconds read (About 1 words)
+                    2 minutes read (About 272 words)
                 </span>
                 
             </div>
@@ -141,18 +141,23 @@
         
         <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
             
-                联系方式
+                navigationBar颜色问题
             
         </h1>
         <div class="content">
-            <h1 id="QQ-464918717"><a href="#QQ-464918717" class="headerlink" title="QQ: 464918717"></a>QQ: 464918717</h1>
+            <h4 id="1-在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。"><a href="#1-在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。" class="headerlink" title="1.在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。"></a>1.在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。</h4><figure class="highlight ruby hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">self</span>.navigationController.navigationBar.backgroundColor = [UIColor greenColor];</span><br></pre></td></tr></table></figure>
+<h3 id="2-需要将阴影影藏-成了透明色"><a href="#2-需要将阴影影藏-成了透明色" class="headerlink" title="2.需要将阴影影藏,成了透明色"></a>2.需要将阴影影藏,成了透明色</h3><figure class="highlight ruby hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="hljs-keyword">self</span>.navigationController.navigationBar <span class="hljs-symbol">setBackgroundImage:</span>[UIImage new] <span class="hljs-symbol">forBarMetrics:</span>UIBarMetricsDefault];</span><br><span class="line">[UIImage new]<span class="hljs-keyword">self</span>.navigationBar.shadowImage = [UIImage new];</span><br></pre></td></tr></table></figure>
+<h3 id="3-在navigationBar中的一个属性值：translucent。"><a href="#3-在navigationBar中的一个属性值：translucent。" class="headerlink" title="3.在navigationBar中的一个属性值：translucent。"></a>3.在navigationBar中的一个属性值：translucent。</h3><blockquote>
+<p>当背景为半透明的时候，界面的布局是从（0，0）开始的；当界面为纯色的时候，界面的布局从（0，64开始布局）.当背景图中包含alpha的色值，系统会默认将translucent设置为yes，没有包含色值的设置为no，所以我们需要手动设置translucent，这样系统就会按照固定的初始化为止开始布局。我一般设置为yes，让界面开始从（0，0）开始布局</p>
+</blockquote>
+
         </div>
         
         <div class="level is-size-7 is-uppercase">
             <div class="level-start">
                 <div class="level-item">
                     <span class="is-size-6 has-text-grey has-mr-7">#</span>
-                    <a class="has-link-grey -link" href="/tags/about/">about</a>
+                    <a class="has-link-grey -link" href="/tags/iOS/">iOS</a>
                 </div>
             </div>
         </div>
@@ -167,12 +172,19 @@
     <div class="level post-navigation is-flex-wrap is-mobile">
         
         <div class="level-start">
-            <a class="level level-item has-link-grey  article-nav-prev" href="/2018/12/19/dai41kai/">
+            <a class="level level-item has-link-grey  article-nav-prev" href="/2018/12/31/dai47ka/">
                 <i class="level-item fas fa-chevron-left"></i>
-                <span class="level-item">第４１課</span>
+                <span class="level-item">第４７課</span>
             </a>
         </div>
         
+        
+        <div class="level-end">
+            <a class="level level-item has-link-grey  article-nav-next" href="/2018/12/24/dai46ka/">
+                <span class="level-item">第４６課</span>
+                <i class="level-item fas fa-chevron-right"></i>
+            </a>
+        </div>
         
     </div>
 </div>
@@ -764,7 +776,7 @@
             <div class="level-start has-text-centered-mobile">
                 <a class="footer-logo is-block has-mb-6" href="/">
                 
-                    <img src="/images/logo.svg" alt="联系方式" height="28">
+                    <img src="/images/logo.svg" alt="navigationBar颜色问题" height="28">
                 
                 </a>
                 <p class="is-size-7">
