@@ -119,6 +119,47 @@
                 <div class="column is-8-tablet is-8-desktop is-6-widescreen has-order-2 column-main">
     <div class="card">
     
+    <div class="card-content article ">
+        
+        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
+            <div class="level-left">
+                <time class="level-item has-text-grey" datetime="2018-12-27T08:30:04.000Z">2018-12-27</time>
+                
+                
+                <span class="level-item has-text-grey">
+                    
+                    
+                    2 minutes read (About 272 words)
+                </span>
+                
+            </div>
+        </div>
+        
+        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
+            
+                <a class="has-link-black-ter" href="/2018/12/27/iOS-navigationBar-color/">navigationBar颜色问题</a>
+            
+        </h1>
+        <div class="content">
+            <h4 id="1-在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。"><a href="#1-在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。" class="headerlink" title="1.在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。"></a>1.在设置navigationBar颜色的时候，其实发现了并没有那么简单，一般我们会认为只要设置了backgroundColor，就会把navigationBar的背景颜色修改，其实并没有那么简单，修改的颜色并不能和我们想象的一样，总是感觉像蒙上了一层。</h4><figure class="highlight ruby hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="hljs-keyword">self</span>.navigationController.navigationBar.backgroundColor = [UIColor greenColor];</span><br></pre></td></tr></table></figure>
+<h3 id="2-需要将阴影影藏-成了透明色"><a href="#2-需要将阴影影藏-成了透明色" class="headerlink" title="2.需要将阴影影藏,成了透明色"></a>2.需要将阴影影藏,成了透明色</h3><figure class="highlight ruby hljs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[<span class="hljs-keyword">self</span>.navigationController.navigationBar <span class="hljs-symbol">setBackgroundImage:</span>[UIImage new] <span class="hljs-symbol">forBarMetrics:</span>UIBarMetricsDefault];</span><br><span class="line">[UIImage new]<span class="hljs-keyword">self</span>.navigationBar.shadowImage = [UIImage new];</span><br></pre></td></tr></table></figure>
+<h3 id="3-在navigationBar中的一个属性值：translucent。"><a href="#3-在navigationBar中的一个属性值：translucent。" class="headerlink" title="3.在navigationBar中的一个属性值：translucent。"></a>3.在navigationBar中的一个属性值：translucent。</h3><blockquote>
+<p>当背景为半透明的时候，界面的布局是从（0，0）开始的；当界面为纯色的时候，界面的布局从（0，64开始布局）.当背景图中包含alpha的色值，系统会默认将translucent设置为yes，没有包含色值的设置为no，所以我们需要手动设置translucent，这样系统就会按照固定的初始化为止开始布局。我一般设置为yes，让界面开始从（0，0）开始布局</p>
+</blockquote>
+
+        </div>
+        
+        
+        
+    </div>
+</div>
+
+
+
+
+
+    <div class="card">
+    
     <div class="card-image">
         <a href="/2018/12/24/dai46ka/" class="image is-7by1">
             <img class="thumbnail" src="/thumbnails/kiruatogon.png" alt="第４６課">
@@ -172,83 +213,6 @@
 <p>“〜のような味/匂いがします”的形式<br>この野菜、レモンのような味がしますね。<br>このスープは、日本の味噌汁のような匂いがします。</p>
 <p>除了”味/匂い”之外表示听觉”声、おと”,表示感觉”感じ等,也用”~がします”形式(有声音/有感觉)<br>ここには昔来たことがある感じがします。(我觉得以前来过这里)<br>注意 这里的”~します”绝不能用成”~あります”</p>
 <p>参考: 表示身体状况的词语也可以加在”がします”的前面使用.<br>さっきから、ちょっと吐き気がするんです。(从刚刚开始,觉得有点儿恶心)</p>
-</blockquote>
-
-        </div>
-        
-        
-        
-    </div>
-</div>
-
-
-
-
-
-    <div class="card">
-    
-    <div class="card-image">
-        <a href="/2018/12/23/dai45ka/" class="image is-7by1">
-            <img class="thumbnail" src="/thumbnails/kiruatogon.png" alt="第４５課">
-        </a>
-    </div>
-    
-    <div class="card-content article ">
-        
-        <div class="level article-meta is-size-7 is-uppercase is-mobile is-overflow-x-auto">
-            <div class="level-left">
-                <time class="level-item has-text-grey" datetime="2018-12-23T08:13:09.000Z">2018-12-23</time>
-                
-                
-                <span class="level-item has-text-grey">
-                    
-                    
-                    5 minutes read (About 764 words)
-                </span>
-                
-            </div>
-        </div>
-        
-        <h1 class="title is-size-3 is-size-4-mobile has-text-weight-normal">
-            
-                <a class="has-link-black-ter" href="/2018/12/23/dai45ka/">第４５課</a>
-            
-        </h1>
-        <div class="content">
-            <h2 id="文法"><a href="#文法" class="headerlink" title="文法"></a>文法</h2><h3 id="1-动-ていきます-てきました-持续-变化"><a href="#1-动-ていきます-てきました-持续-变化" class="headerlink" title="1.动 + ていきます/てきました　(持续/变化)"></a>1.动 + ていきます/てきました　(持续/变化)</h3><blockquote>
-<p>时间和空间的变化</p>
-</blockquote>
-<blockquote>
-<p>少子化が進んで、日本の人口はだんだん減っていくでしょう。(少子化的现象日益加剧,日本的人口将会越来越少吧)<br>二十年間ずっと日本語を勉強してきました。(这20年来我一直在学习日语)</p>
-</blockquote>
-<h3 id="2-动-てきました-出现"><a href="#2-动-てきました-出现" class="headerlink" title="2. 动 + てきました　(出现)"></a>2. 动 + てきました　(出现)</h3><blockquote>
-<p>表示某种状态的开始和出现 只限前接非意志动词</p>
-</blockquote>
-<blockquote>
-<p>ずっと本を読んでいたので、目が疲れてきました。(之前一直在看书,眼睛开始累了.)<br>お腹が空いてきたんですが、そろそろ食事に行きませんか。　(肚子有点饿了,咱们去吃饭好吗?)</p>
-</blockquote>
-<h3 id="3-小句1-し-小句2-し-小句3"><a href="#3-小句1-し-小句2-し-小句3" class="headerlink" title="3.小句1 + し, 小句2 + し, 小句3."></a>3.小句1 + し, 小句2 + し, 小句3.</h3><blockquote>
-<p>表示有多个理由 名词或二类形 + だ ＋ し<br>只有一个し　暗示还有其他的理由</p>
-</blockquote>
-<blockquote>
-<p>美味しいし、手軽だし、私は冷凍食品をよく食べます。(好吃又简单,我经常吃冷冻食品)<br>電気も消えているし、かぎもかかっているし、きっと留守ですよ。(黑着灯,又锁着门,肯定不在家)</p>
-</blockquote>
-<blockquote>
-<p>注意: “て”形和”~し、~し、~”的区别有两点:<br>①”て”一般只用于连接形容词和名词,而”~し、~し、~”还可以接动词<br>②”~し、~し、~”一般用于陈述原因,理由,而”て”形则可用于多个场合</p>
-</blockquote>
-<h3 id="4-动-一类形-ば-动-一类形-ほど-小句"><a href="#4-动-一类形-ば-动-一类形-ほど-小句" class="headerlink" title="4.动/一类形+ば　动/一类形+ほど+小句"></a>4.动/一类形+ば　动/一类形+ほど+小句</h3><blockquote>
-<p>动词ば形+动词基本形+ほど+小句　一类形容词ば形+一类形容词+ほど+小句<br>越来越怎么怎么样</p>
-</blockquote>
-<blockquote>
-<p>この本は読めば読むほど、面白いです。(这本书越读越有趣.)<br>結婚式のスピーチは、短けば短いほどいいと言われていますね。(大家都说结婚典礼上的致辞越短越好.)</p>
-</blockquote>
-<blockquote>
-<p>二类形容词有时也可以用于这一句型.其接续方式为:”二类形容词+なら＋二类形容词+な＋ほど”或”二类形容词+であれば＋二类形容词+な＋ほど”。前者多用于口语,后者多用于书面语.</p>
-<p>子供は元気なら元気なほどいいです。(小孩越健康越好)<br>子供は元気であれば元気なほどいいです。(小孩越健康越好)</p>
-</blockquote>
-<h3 id="5-”で-へ-から-まで-と”-の"><a href="#5-”で-へ-から-まで-と”-の" class="headerlink" title="5.”で/へ/から/まで/と” + の"></a>5.”で/へ/から/まで/と” + の</h3><blockquote>
-<p>に后面不能加の</p>
-<p>空港から市内までのアクセスがよくなりました。(从机场到市区的交通方便了.)<br>北京から東京への便は1日に１０便以上あります。(一天有10个以上的航班从北京开往东京)<br>これは母へのプレゼントです。<br>これは母にのプレゼントです。(X) </p>
 </blockquote>
 
         </div>
@@ -332,7 +296,7 @@
                         Posts
                     </p>
                     <p class="title has-text-weight-normal">
-                        61
+                        62
                     </p>
                 </div>
             </div>
@@ -467,6 +431,25 @@
         
         <article class="media">
             
+            <a href="/2019/08/09/bunpou_day52/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/thumbnails/ira.png" alt="52日目">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-09T11:01:21.000Z">2019-08-09</time></div>
+                    <a href="/2019/08/09/bunpou_day52/" class="has-link-black-ter is-size-6">52日目</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/08/08/bunpou_day51/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/thumbnails/ira.png" alt="51日目">
@@ -541,25 +524,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/08/01/bunpou_day47/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/thumbnails/ira.png" alt="47日目">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-01T11:01:21.000Z">2019-08-01</time></div>
-                    <a href="/2019/08/01/bunpou_day47/" class="has-link-black-ter is-size-6">47日目</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -578,7 +542,7 @@
                     <span class="level-item">August 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">6</span>
                 </span>
             </a>
         </li>
@@ -679,7 +643,7 @@
                             <span class="level-item">N2文法</span>
                         </span>
                         <span class="level-end">
-                            <span class="level-item tag">51</span>
+                            <span class="level-item tag">52</span>
                         </span>
                     </a>
                 </li>
@@ -742,6 +706,25 @@
         
         <article class="media">
             
+            <a href="/2019/08/09/bunpou_day52/" class="media-left">
+                <p class="image is-64x64">
+                    <img class="thumbnail" src="/thumbnails/ira.png" alt="52日目">
+                </p>
+            </a>
+            
+            <div class="media-content">
+                <div class="content">
+                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-09T11:01:21.000Z">2019-08-09</time></div>
+                    <a href="/2019/08/09/bunpou_day52/" class="has-link-black-ter is-size-6">52日目</a>
+                    <p class="is-size-7 is-uppercase">
+                        
+                    </p>
+                </div>
+            </div>
+        </article>
+        
+        <article class="media">
+            
             <a href="/2019/08/08/bunpou_day51/" class="media-left">
                 <p class="image is-64x64">
                     <img class="thumbnail" src="/thumbnails/ira.png" alt="51日目">
@@ -816,25 +799,6 @@
             </div>
         </article>
         
-        <article class="media">
-            
-            <a href="/2019/08/01/bunpou_day47/" class="media-left">
-                <p class="image is-64x64">
-                    <img class="thumbnail" src="/thumbnails/ira.png" alt="47日目">
-                </p>
-            </a>
-            
-            <div class="media-content">
-                <div class="content">
-                    <div><time class="has-text-grey is-size-7 is-uppercase" datetime="2019-08-01T11:01:21.000Z">2019-08-01</time></div>
-                    <a href="/2019/08/01/bunpou_day47/" class="has-link-black-ter is-size-6">47日目</a>
-                    <p class="is-size-7 is-uppercase">
-                        
-                    </p>
-                </div>
-            </div>
-        </article>
-        
     </div>
 </div>
 
@@ -853,7 +817,7 @@
                     <span class="level-item">August 2019</span>
                 </span>
                 <span class="level-end">
-                    <span class="level-item tag">5</span>
+                    <span class="level-item tag">6</span>
                 </span>
             </a>
         </li>
@@ -954,7 +918,7 @@
                             <span class="level-item">N2文法</span>
                         </span>
                         <span class="level-end">
-                            <span class="level-item tag">51</span>
+                            <span class="level-item tag">52</span>
                         </span>
                     </a>
                 </li>
